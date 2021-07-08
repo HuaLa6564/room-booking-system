@@ -1,9 +1,6 @@
 # room-booking-system
 Vanilla PHP for room booking system when i was in diploma. Group Project with fitriah, ayu and sharmiza. 
 
-
-Vanilla PHP system for Human Resource
-
 Steps :
 
 1.run your xampp
