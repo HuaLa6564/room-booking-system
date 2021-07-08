@@ -1,0 +1,155 @@
+<html>
+<?php include("navbar.php"); ?>
+<head>
+
+	<title>Feedback</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bootstrap/css/bootstrap.min.css" 
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  
+
+	body {
+		background-color: lavender;
+	}
+	</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	body {margin:0;}
+	.main {
+	  padding: 12px;
+	  margin-top: 50px;
+	  height: 1500px; /* Used in this example to enable scrolling */
+	}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="container">
+			<form name="form" action="feed.php" method="post">
+				<fieldset style="width:800"><legend>FEEDBACK FORM</legend>
+					<table align="center">
+						<tr>
+							<td>Name :</td>
+							<td><input type="text" name="name"></td>
+						</tr>
+						<tr>
+							<th align="center" colspan="2">Rate Us :</th>
+						</tr>
+						<tr>
+							<td align="center" colspan="2">
+								<input type="radio" name="rate" value="Good">Good</input>
+								<input type="radio" name="rate" value="Average">Average</input>
+								<input type="radio" name="rate" value="Need Improvement">Need Improvement</input>
+							</td>
+						</tr>
+						<tr>
+							<td>Comment :</td>
+							<td><textarea rows="5" cols="8" name="comment"></textarea></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td><input type="submit" name="submit" value="Submit"></td>
+						</tr>
+					</table>
+			</form>
+		</div>
+	</div>
+	
+	<div class="col-sm-8">
+	<div class="row " style="margin-top: 59px">
+    <div class="col-md-10 col-md-offset-1 form-container">
+        <h2>Feedback</h2>
+        <p>
+            Please provide your feedback below:
+        </p>
+        <form name="form" method="post" action="">
+         
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <label for="comments">
+                        Comments:</label>
+                    <textarea class="form-control" type="textarea" name="comments" placeholder="Your Comments" maxlength="6000" rows="7" ></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Your Name:</label>
+                    <input type="text" class="form-control"  name="name">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="email">
+                        Email:</label>
+                    <input type="email" class="form-control" name="email">
+                </div>
+            </div>
+
+                        <div class="row">
+                <div class="col-sm-12 form-group">
+                    <input type="submit" class="btn btn-lg btn-warning btn-block" onclick="feedback()" value="POST">
+                </div>
+            </div>
+
+        </form>
+    </div>
+	
+	<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>UITM<span>logo</span></h3>
+
+
+				<p class="footer-company-name">Group 4 &copy; 2018</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Kampus Samarahan 2</span> Sarawak, Malaysia</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>089-111222</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="fitriahAbdul@outlook.com">fitriahAbdul@outlook.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					This room booking system is designed by Farah Qurataanyuni, Sharmiza, Ayu Ernadia, 
+					and Nurul Fitriah in order to ease student or staff to make a reservation.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/profile.php?id=100008284115375"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.instagram.com/fitrixh_fxx/?hl=en"><i class="fa fa-instagram"></i></a>
+			        <a href ="https://api.whatsapp.com/send?phone=60102365427"><i class="fa fa-whatsapp"></i></a> 
+					<a href="https://web.telegram.org/#/im?p=@Fit_fitriah"> <i class="fa fa-telegram"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+
+</body>
+</html>
